@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: servicio-orquesta-container
-      image: ds3/microrquesta:latest
+      image: servicioorquesta:latest
       ports:
         - containerPort: 8000
 

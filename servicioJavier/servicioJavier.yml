@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: servicio-Javier-pod
+  name: servicio-javier-pod
   labels:
-    app: servicio-Javier
+    app: servicio-javier
 spec:
   containers:
-    - name: servicio-Javier-container
-      image: ds3/servicio-Javier:latest
+    - name: servicio-javier-container
+      image: servicio-javier:latest
       ports:
         - containerPort: 3001
 
@@ -16,7 +16,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: servicio-Javier-service
+  name: servicio-javier-service
 spec:
   type: ClusterIP
   ports:
@@ -24,4 +24,4 @@ spec:
       targetPort: 3001
       protocol: TCP
   selector:
-    app: servicio-Javier
+    app: servicio-javier

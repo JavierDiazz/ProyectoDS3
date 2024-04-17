@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /usr/src/app
 
 # Copia el archivo del proyecto al contenedor
-COPY ./servicio_Javier.js ./
+COPY ./servicio_javier.js ./
 
 # Instala Express
 RUN npm init -y
@@ -15,4 +15,4 @@ RUN npm install express
 EXPOSE 3001
 
 # Comando para ejecutar la aplicación
-CMD ["node", "servicio_Javier.js"]
+CMD ["node", "servicio_javier.js"]
